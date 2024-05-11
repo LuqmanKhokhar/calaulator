@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Scientific Calculator</h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <input type="text" id="output" readonly />
+
+        <div class="boxes">
+          <button
+            class="box"
+            onclick=" currentDisplay = ''; document.querySelector('#output').value= currentDisplay;"
+          >
+            C
+          </button>
+          <button
+            class="box"
+            onclick="currentDisplay = currentDisplay +'1';document.querySelector('#output').value = currentDisplay"
+          >
+            1
+          </button>
+          <button
+            class="box"
+            onclick="currentDisplay = currentDisplay +'2';document.querySelector('#output').value = currentDisplay"
+          >
+            2
+          </button>
+          <button
+            class="box"
+            onclick="currentDisplay = currentDisplay +'+';document.querySelector('#output').value = currentDisplay"
+          >
+            +
+          </button>
+          <button
+            class="box"
+            onclick="currentDisplay=currentDisplay+'3';document.querySelector('#output').value = currentDisplay"
+          >
+            3
+          </button>
+          <button
+            class="box"
+            onclick="currentDisplay = currentDisplay +'4';document.querySelector('#output').value = currentDisplay"
+          >
+            4
+          </button>
+          <button
+            class="box"
+            onclick="currentDisplay = currentDisplay +'-';document.querySelector('#output').value = currentDisplay"
+          >
+            -
+          </button>
+          <button
+            class="box"
+            onclick="currentDisplay = currentDisplay +'5';document.querySelector('#output').value = currentDisplay"
+          >
+            5
+          </button>
+          <button
+            class="box"
+            onclick="currentDisplay = currentDisplay +'6';document.querySelector('#output').value = currentDisplay"
+          >
+            6
+          </button>
+          <button
+            class="box"
+            onclick="currentDisplay = currentDisplay +'*';document.querySelector('#output').value = currentDisplay"
+          >
+            *
+          </button>
+          <button
+            class="box"
+            onclick="currentDisplay = currentDisplay +'7';document.querySelector('#output').value = currentDisplay"
+          >
+            7
+          </button>
+          <button
+            class="box"
+            onclick="currentDisplay = currentDisplay +'8';document.querySelector('#output').value = currentDisplay"
+          >
+            8
+          </button>
+          <button
+            class="box"
+            onclick="currentDisplay = currentDisplay +'/';document.querySelector('#output').value = currentDisplay"
+          >
+            /
+          </button>
+          <button
+            class="box"
+            onclick="currentDisplay = currentDisplay +'9';document.querySelector('#output').value = currentDisplay"
+          >
+            9
+          </button>
+          <button
+            class="box"
+            onclick="currentDisplay = currentDisplay +'0';document.querySelector('#output').value = currentDisplay"
+          >
+            0
+          </button>
+          <button
+            class="box"
+            onclick="currentDisplay = currentDisplay +'.';document.querySelector('#output').value = currentDisplay"
+          >
+            .
+          </button>
+          <button
+            class="box"
+            onclick="let result = eval(currentDisplay); currentDisplay = result; document.querySelector('#output').value = currentDisplay"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      let currentDisplay = "";
+      document.querySelector("#output").value = currentDisplay;
+    </script>
+  </body>
+</html>
